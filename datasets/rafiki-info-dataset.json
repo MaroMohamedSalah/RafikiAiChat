@@ -4,7 +4,9 @@
 			"tag": "rafiki_info",
 			"patterns": [
 				"what is rafiki",
+				"rafiki",
 				"tell me about rafiki",
+				"tell rafiki",
 				"who is rafiki",
 				"rafiki website"
 			],
@@ -19,9 +21,13 @@
 			"tag": "team_rafiki",
 			"patterns": [
 				"who is behind rafiki",
+				"behind rafiki",
 				"tell me about team rafiki",
+				"tell team rafiki",
 				"team members of rafiki",
-				"rafiki's team"
+				"team members rafiki",
+				"rafiki's team",
+				"rafiki team"
 			],
 			"responses": [
 				"The team behind Rafiki consists of dedicated individuals passionate about supporting students. They work on providing resources, communication channels, and career support to aid students in their academic journey.",
@@ -34,7 +40,9 @@
 			"tag": "rafiki_scoop",
 			"patterns": [
 				"who can access rafiki",
-				"who can join rafiki",
+				"access rafiki",
+				"who can use rafiki",
+				"use rafiki",
 				"rafiki users",
 				"rafiki membership"
 			],
@@ -48,10 +56,15 @@
 		{
 			"tag": "rafiki_login",
 			"patterns": [
-				"how to log in rafiki",
+				"how to login rafiki",
+				"login rafiki",
+				"access rafiki",
 				"login process for rafiki",
-				"join rafiki",
-				"steps to access rafiki"
+				"login process rafiki",
+				"How to create an account on rafiki",
+				"create account rafiki",
+				"steps to access rafiki",
+				"steps access rafiki"
 			],
 			"responses": [
 				"To log in to Rafiki, visit the website and click on the 'Log In' button.",
@@ -64,8 +77,11 @@
 			"tag": "rafiki_social",
 			"patterns": [
 				"social media of rafiki",
+				"social media rafiki",
 				"rafiki's social pages",
-				"rafiki on social networks"
+				"rafiki social pages",
+				"rafiki on social networks",
+				"rafiki social networks"
 			],
 			"responses": [
 				"Rafiki's Facebook page: https://www.facebook.com/rafikiFCAIHu",
@@ -78,8 +94,10 @@
 			"tag": "rafiki_communicate",
 			"patterns": [
 				"how to communicate with rafiki",
+				"communicate rafiki",
 				"contact team rafiki",
-				"talk to team rafiki"
+				"talk to team rafiki",
+				"talk team rafiki"
 			],
 			"responses": [
 				"You can contact Rafiki via email at rafiki.questions@gmail.com."
@@ -90,9 +108,12 @@
 			"tag": "rafiki_chat",
 			"patterns": [
 				"what is rafiki chat",
-				"info about rafiki chat",
 				"rafiki chat",
-				"purpose of rafiki chat"
+				"info about rafiki chat",
+				"info rafiki chat",
+				"rafiki chat",
+				"purpose of rafiki chat",
+				"purpose rafiki chat"
 			],
 			"responses": [
 				"Rafiki chat helps students manage their college life effectively by providing information about their academic year, paperwork, schedules, and locations within the college.",
@@ -105,9 +126,12 @@
 			"tag": "rafiki_feedback",
 			"patterns": [
 				"how to give feedback to rafiki",
+				"give feedback rafiki",
 				"share my thoughts on rafiki",
+				"share thoughts rafiki",
 				"rafiki feedback",
-				"provide suggestions for rafiki"
+				"provide suggestions for rafiki",
+				"provide suggestions rafiki"
 			],
 			"responses": [
 				"We appreciate your feedback! Please email us at feedback@rafiki.com to share your thoughts and suggestions.",
@@ -119,9 +143,14 @@
 			"tag": "rafiki_support",
 			"patterns": [
 				"need help with rafiki",
+				"need help rafiki",
 				"require assistance on rafiki",
+				"require assistance rafiki",
 				"help with rafiki",
-				"technical support for rafiki"
+				"help rafiki",
+				"technical support for rafiki",
+				"technical support rafiki",
+				"help"
 			],
 			"responses": [
 				"For any assistance or technical support regarding Rafiki, please reach out to our support team at support@rafiki.com.",
