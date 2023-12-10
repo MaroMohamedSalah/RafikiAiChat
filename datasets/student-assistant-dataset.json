@@ -8,7 +8,8 @@
 				"How much are the fees for this year",
 				"tell me the fees of my academic year",
 				"much fees year",
-				"tell fees academic year"
+				"tell fees academic year",
+				"fees"
 			],
 			"responses": [
 				"you can know the fees from here: http://myhu.helwan.edu.eg/login"

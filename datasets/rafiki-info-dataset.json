@@ -1,10 +1,8 @@
 {
 	"intents": [
 		{
-			"tag": "rafiki_info",
+			"tag": "info",
 			"patterns": [
-				"what is rafiki",
-				"rafiki",
 				"tell me about rafiki",
 				"tell rafiki",
 				"who is rafiki",
@@ -18,7 +16,7 @@
 			"context_set": ""
 		},
 		{
-			"tag": "team_rafiki",
+			"tag": "team",
 			"patterns": [
 				"who is behind rafiki",
 				"behind rafiki",
