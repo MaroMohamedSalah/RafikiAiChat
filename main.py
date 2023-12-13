@@ -2,6 +2,7 @@ import json
 import random
 import Levenshtein
 
+from textblob import TextBlob
 from nltk import pos_tag, word_tokenize
 from nltk.corpus import stopwords
 from contractions import fix
@@ -33,7 +34,9 @@ def tokenize_user_input(user_input_str):
         lang = "arabic"
 
     fixed_input = fix(user_input_str)
-
+    
+    fixed_input = str(TextBlob(fixed_input).correct())
+    
     if isinstance(fixed_input, tuple):
         fixed_input = fixed_input[0]
 
