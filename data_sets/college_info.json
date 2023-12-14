@@ -155,11 +155,26 @@
 			"responses": ["In Floor 4", "Fourth floor", "Last floor"],
 			"context_set": ""
 		},
+
 		{
 			"tag": ["specialization", "ai"],
 			"patterns": ["ai specialization", "specialization ai", "ai"],
 			"responses": [
 				"your nessessory subjects Convex optimization, AI , Machine Learning & Big Data then you can choose 2 subjects from rest"
+			],
+			"context_set": ""
+		},
+			{
+			"tag": "channel",
+			"patterns": [
+				"doctor mohamed said channel",
+				"mohamed said channel",
+				"doctor mohamed elsaid channel",
+				"mohamed elsaid channel",
+				"mohamed elsaid"
+			],
+			"responses": [
+				"You can watch dr.moahmed content:https://www.youtube.com/@DrMohammedElSaid"
 			],
 			"context_set": ""
 		},
@@ -194,6 +209,8 @@
 				"doctor amr",
 				"doctor amr ghoniem",
 				"amr",
+				"ghoneim",
+				"ghoniem",
 				"amr ghoniem",
 				"dr.amr ghoniem",
 				"who is doctor amr",
@@ -245,19 +262,7 @@
 			],
 			"context_set": ""
 		},
-		{
-			"tag": "channel",
-			"patterns": [
-				"doctor mohamed said channel",
-				"mohamed said channel",
-				"doctor mohamed elsaid channel",
-				"mohamed elsaid channel"
-			],
-			"responses": [
-				"You can watch dr.moahmed content:https://www.youtube.com/@DrMohammedElSaid"
-			],
-			"context_set": ""
-		},
+
 		{
 			"tag": ["location", "place", "affair"],
 			"patterns": [
@@ -298,5 +303,6 @@
 			],
 			"context_set": ""
 		}
+
 	]
 }
