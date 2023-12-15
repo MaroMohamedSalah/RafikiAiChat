@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/rafikiAi.iml" filepath="$PROJECT_DIR$/.idea/rafikiAi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/patterns.iml" filepath="$PROJECT_DIR$/.idea/patterns.iml" />
     </modules>
   </component>
 </project>
