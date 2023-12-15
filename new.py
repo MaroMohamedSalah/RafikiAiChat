@@ -36,8 +36,8 @@ def tokenize_user_input(user_input_str):
 
     pos_tags = pos_tag(tokens)
 
-    stop_words = set(stopwords.words(lang))
-    tokens = [token for token in tokens if token not in stop_words]
+    #stop_words = set(stopwords.words(lang))
+  #  tokens = [token for token in tokens if token not in stop_words]
 
     return tokens
 

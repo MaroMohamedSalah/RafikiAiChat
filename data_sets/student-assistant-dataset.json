@@ -35,7 +35,8 @@
 			"patterns": [
 				"give me some material for convex please",
 				"give material convex please",
-
+				"convex material",
+				"convex",
 				"send convex lectures"
 			],
 			"responses": [
@@ -68,18 +69,7 @@
 			],
 			"context_set": ""
 		},
-		{
-			"tag": ["material", "ML"],
-			"patterns": [
-				"i need some material for ML",
-				"send ml lectures",
-				"need material ml"
-			],
-			"responses": [
-				"Hesham asem playlist for ML : https://www.youtube.com/watch?v=5_GKIhoXKyI&list=PL6-3IRz2XF5UJE2PbY7UU4SHi7UpV1mXo"
-			],
-			"context_set": ""
-		},
+
 		{
 			"tag": ["material", "db2"],
 			"patterns": [
