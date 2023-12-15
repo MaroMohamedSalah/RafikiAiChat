@@ -179,6 +179,24 @@
 			"context_set": ""
 		},
 		{
+			"tag": ["material", "SA"],
+			"patterns": [
+				"i need some material for sa",
+				"give me material for sa",
+				"sa lectures",
+				"sa project",
+				"send more material fos sa",
+				"need material sa",
+				"sa material",
+				"sa"
+			],
+			"responses": [
+				"here is some materials for sa made by marawan mohamed : https://www.youtube.com/watch?v=ggGmXba7yYU&list=PLjQhZRrolr67Nkq7ZYXfkUt87Q_6B5VxJ&pp=iAQB",
+				"here you can find D.MohamedEldesoky playlist for sa: https://www.youtube.com/watch?v=9jrN5BPx4MI&list=PL1DUmTEdeA6I-bsfaErW12ro4_6hC7fSp "
+			],
+			"context_set": ""
+		},
+		{
 			"tag": ["specialization", "cs"],
 			"patterns": ["cs specialization", "specialization cs", "cs"],
 			"responses": [
