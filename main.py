@@ -1,13 +1,17 @@
 import json
 import random
 import Levenshtein
+import nltk
 
 from textblob import TextBlob
 from nltk import pos_tag, word_tokenize
 from nltk.corpus import stopwords
 from contractions import fix
-from Chat_Bot import detect_language
-from nltk.stem import WordNetLemmatizer
+#from Chat_Bot import detect_language
+#from nltk.stem import WordNetLemmatizer
+#nltk.download('all')
+#nltk.download('punkt')
+
 
 def handle_input(input_string):
     result = ""
@@ -25,13 +29,15 @@ def load_intents_from_json(file_paths):
     return all_intents
 
 def process_input(input_text):
-    processed_input = handle_input(input_text.lower().replace(" ", ""))
-    return processed_input
+   processed_input = handle_input(input_text.lower().replace(" ", ""))
+   return processed_input
+
+
 
 def tokenize_user_input(user_input_str):
     lang = 'english'
-    if detect_language(user_input_str) == 'ar':
-        lang = "arabic"
+    #if detect_language(user_input_str) == 'ar':
+     #   lang = "arabic"
 
     fixed_input = fix(user_input_str)
     
@@ -82,6 +88,8 @@ def chatbot(intents):
             print("rafikak:", response)
         else:
             print("Chatbot: I'm sorry, I didn't understand that. Can you please rephrase?")
+
+
 
 # Main program
 json_file_paths = ['data_sets/jocks-datasets.json', 'data_sets/college_info.json', 'data_sets/general-dataset.json','data_sets/rafiki-info-dataset.json','data_sets/student-assistant-dataset.json']
