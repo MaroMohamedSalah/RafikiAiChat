@@ -37,7 +37,7 @@ def tokenize_user_input(user_input_str):
     pos_tags = pos_tag(tokens)
 
     #stop_words = set(stopwords.words(lang))
-  #  tokens = [token for token in tokens if token not in stop_words]
+    #tokens = [token for token in tokens if token not in stop_words]
 
     return tokens
 
@@ -45,9 +45,9 @@ def get_response(intent, user_input_str):
     processed_input = process_input(user_input_str).lower()
 
     # Debugging exact match check
-    print("Processed Input:", processed_input)
+    # print("Processed Input:", processed_input)
     processed_patterns = list(map(lambda pattern: process_input(pattern).lower(), intent['patterns']))
-    print("Processed Patterns:", processed_patterns)
+    # print("Processed Patterns:", processed_patterns)
 
     # Exact match check with the same length
     exact_matches = [pattern for pattern in processed_patterns if len(processed_input) == len(pattern) and processed_input == pattern]
