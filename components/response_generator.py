@@ -16,6 +16,12 @@ def generate_response(intent, user_input_str):
     - response (str): The generated response based on matching patterns.
     """
     processed_input = process_input(user_input_str).lower()
+
+    # Debugging exact match check
+    print("Processed Input:", processed_input)
+    processed_patterns = list(map(lambda pattern: process_input(pattern).lower(), intent['patterns']))
+    print("Processed Patterns:", processed_patterns)
+
     processed_patterns = list(map(lambda pattern: process_input(pattern).lower(), intent['patterns']))
 
     # Exact match check with the same length
