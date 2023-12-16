@@ -1,7 +1,6 @@
 import json
 import random
 import numpy as np
-from fuzzywuzzy import fuzz
 
 from nltk import pos_tag, word_tokenize
 from nltk.corpus import stopwords
@@ -14,12 +13,7 @@ def load_intents_from_json(file_path):
         data = json.load(file)
     return data['intents']
 
-def handle_input(input_string):
-    result = ""
-    for char in input_string:
-        if len(result) == 0 or char != result[-1]:
-            result += char
-    return result
+
 def tokenize_user_input(user_input_str):
     lang = 'english'
     if detect_language(user_input_str) == 'ar':
@@ -41,31 +35,14 @@ def tokenize_user_input(user_input_str):
     tokens = [token for token in tokens if token not in stop_words]
 
     return tokens
-def process_input(input_text):
-    processed_input = handle_input(input_text.lower().replace(" ", ""))
-    return processed_input
+
 
 def get_response(intents, user_input_str):
-    processed_input = process_input(user_input_str).lower()
-
     for intent in intents:
-        processed_patterns = list(map(lambda pattern: process_input(pattern).lower(), intent['patterns']))
-        # print("Processed Patterns:", processed_patterns)
-
-        # Exact match check
-        if processed_input in processed_patterns:
-            return tuple(intent.get('responses', ["I don't understand that."]))
-
-        # Fuzzy match check with a higher threshold
-        elif any(fuzz.partial_ratio(processed_input, pattern) >= 90 for pattern in processed_patterns):
-            return tuple(intent.get('responses', ["I don't understand that."]))
-
-        # Fuzzy match check with a lower threshold
-        elif any(fuzz.partial_ratio(processed_input, pattern) >= 65 for pattern in processed_patterns):
-            return tuple(intent.get('responses', ["I don't understand that."]))
-
-    return tuple(["I don't understand that."])
-
+        for pattern in intent['patterns']:
+            if pattern.lower() in user_input_str.lower():
+                return intent['tag']
+    return None
 
 def detect_state(user_input_str, intents):
     for intent in intents:
