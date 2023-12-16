@@ -47,12 +47,12 @@
 		{
 			"tag": ["material", "AI"],
 			"patterns": [
-				"give me some material for AI please",
-				"give material ai please",
-				"send AI lectures"
+				"ai subject",
+				"material ai",
+				"ai lectures"
 			],
 			"responses": [
-				"Amr ghoneim playlist for AI : https://www.youtube.com/watch?v=sO6VGgBHppo&list=PLsnvpvHuTUbAZr0n65TgytBK6bHdT33A7"
+				"Amr ghoneim playlist for AI : https://www.youtube.com/watch?v=sO6VGgBHppo&list=PLsnvpvHuTUbAZr0n65TgytBK6bHdT33A7", "AI lectures by marwan: https://drive.google.com/drive/folders/1aiBeFhpmFmzdTQPzxKx6ZiRyPfo7-xY2?usp=sharing" , "DR. Amr drive: https://drive.google.com/drive/folders/1idzWQqb_Fb-BPLBPABPRMYLE-Pr7AS8j?fbclid=IwAR096X9bGtoixCqPy6ix9QN1sPa62mMCJF4QoL1PF4WJ0zaoP6Dj4ToiYJk"
 			],
 			"context_set": ""
 		},

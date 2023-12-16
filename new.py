@@ -54,12 +54,16 @@ def get_response(intent, user_input_str):
     if exact_matches:
         return random.choice(intent['responses'])
 
-    # Fuzzy match check with a higher threshold
+    # Check if input length is less than 3 characters, then return no response
+    if len(processed_input) < 3:
+        return None
+
+    # Fuzzy match check with a higher threshold for input length >= 3
     fuzzy_high_matches = [pattern for pattern in intent['patterns'] if fuzz.partial_ratio(processed_input, process_input(pattern).lower()) >= 90 and len(processed_input) == len(pattern)]
     if fuzzy_high_matches:
         return random.choice(intent['responses'])
 
-    # Fuzzy match check with a lower threshold
+    # Fuzzy match check with a lower threshold for input length >= 3
     fuzzy_low_matches = [pattern for pattern in intent['patterns'] if fuzz.partial_ratio(processed_input, process_input(pattern).lower()) >= 65 and len(processed_input) == len(pattern)]
     if fuzzy_low_matches:
         return random.choice(intent['responses'])
