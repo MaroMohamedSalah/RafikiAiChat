@@ -1,10 +1,13 @@
-from nltk.corpus import stopwords
-from contractions import fix
-from nltk.tokenize import word_tokenize
 import json
-import re
 import random
+import re
+
+from contractions import fix
 from langdetect import detect
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+
+
 def detect_language(text):
     try:
         language = detect(text)
@@ -14,10 +17,11 @@ def detect_language(text):
         # print(f"Error detecting language: {e}")
         return 'unknown langauge please try again'
 
+
 def user_input_tokinize(user_input):
     lang = 'english'
-    if detect_language(user_input)=='ar':
-        lang="arabic"
+    if detect_language(user_input) == 'ar':
+        lang = "arabic"
     # Handle contractions
     user_input = fix(user_input)
     # Tokenization Input
@@ -28,6 +32,8 @@ def user_input_tokinize(user_input):
     # Remove punctuation
     # tokens = [token for token in tokens if token.isalpha()]
     return tokens
+
+
 #
 
 
@@ -35,7 +41,6 @@ def load_intents_from_json(file_path):
     with open(file_path, 'r', encoding='utf-8') as json_file:
         intents = json.load(json_file)
     return intents['intents']
-
 
 
 def rule_based_chatbot(user_input, intents):
@@ -48,14 +53,15 @@ def rule_based_chatbot(user_input, intents):
     # If no pattern is matched
     return ["I'm sorry, I don't understand that."]
 
+
 # Example usage
 def chat_with_bot():
-    key=True
+    key = True
     while key:
         file_path = 'data_sets/college_info.json'
         intents = load_intents_from_json(file_path)
         user_input = input('user: ')
-        if user_input.lower() in ['exit','bye']:
+        if user_input.lower() in ['exit', 'bye']:
             print("Rafiki: I'm Happy for helping You")
             # key=False
             exit()
@@ -64,7 +70,6 @@ def chat_with_bot():
             user_input = ' '.join(user_input)
             response = rule_based_chatbot(user_input, intents)
             print("Rafikak: ", response)
-
 
 # chat_with_bot()
 
