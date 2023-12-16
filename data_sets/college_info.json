@@ -155,23 +155,25 @@
 			"responses": ["In Floor 4", "Fourth floor", "Last floor"],
 			"context_set": ""
 		},
-		{
-			"tag": ["specialization", "ai"],
-			"patterns": ["ai specialization", "specialization ai", "ai"],
+			{
+			"tag": ["material", "SA"],
+			"patterns": [
+				"i need some material for sa",
+				"give me material for sa",
+				"sa lectures",
+				"sa project",
+				"send more material fos sa",
+				"need material sa",
+				"sa material",
+				"sa"
+			],
 			"responses": [
-				"your nessessory subjects Convex optimization, AI , Machine Learning & Big Data then you can choose 2 subjects from rest"
+				"here is some materials for sa made by marawan mohamed : https://www.youtube.com/watch?v=ggGmXba7yYU&list=PLjQhZRrolr67Nkq7ZYXfkUt87Q_6B5VxJ&pp=iAQB",
+				"here you can find D.MohamedEldesoky playlist for sa: https://www.youtube.com/watch?v=9jrN5BPx4MI&list=PL1DUmTEdeA6I-bsfaErW12ro4_6hC7fSp "
 			],
 			"context_set": ""
 		},
-		{
-			"tag": ["specialization", "cs"],
-			"patterns": ["cs specialization", "specialization cs", "cs"],
-			"responses": [
-				"your nessessory subjects AI , Machine Learning ,OS2 & Co then you can choose 2 subjects from rest"
-			],
-			"context_set": ""
-		},
-		{
+{
 			"tag": ["specialization", "is"],
 			"patterns": ["is specialization", "specialization is", "is"],
 			"responses": [
@@ -189,11 +191,61 @@
 			"context_set": ""
 		},
 		{
+			"tag": ["specialization", "ai"],
+			"patterns": ["ai specialization", "specialization ai", "ai"],
+			"responses": [
+				"your nessessory subjects Convex optimization, AI , Machine Learning & Big Data then you can choose 2 subjects from rest"
+			],
+			"context_set": ""
+		},
+			{
+			"tag": "channel",
+			"patterns": [
+				"doctor mohamed said channel",
+				"mohamed said channel",
+				"doctor mohamed elsaid channel",
+				"mohamed elsaid channel",
+				"mohamed elsaid"
+			],
+			"responses": [
+				"You can watch dr.moahmed content:https://www.youtube.com/@DrMohammedElSaid"
+			],
+			"context_set": ""
+		},
+
+			{
+			"tag": ["material", "ML"],
+			"patterns": [
+				"i need some material for ML",
+				"send ml lectures",
+				"need material ml",
+				"ml",
+				"ml material",
+				"machine learning"
+			],
+			"responses": [
+				"Hesham asem playlist for ML : https://www.youtube.com/watch?v=5_GKIhoXKyI&list=PL6-3IRz2XF5UJE2PbY7UU4SHi7UpV1mXo"
+			],
+			"context_set": ""
+		},
+
+		{
+			"tag": ["specialization", "cs"],
+			"patterns": ["cs specialization", "specialization cs", "cs"],
+			"responses": [
+				"your nessessory subjects AI , Machine Learning ,OS2 & Co then you can choose 2 subjects from rest"
+			],
+			"context_set": ""
+		},
+
+		{
 			"tag": "doctor",
 			"patterns": [
 				"doctor amr",
 				"doctor amr ghoniem",
 				"amr",
+				"ghoneim",
+				"ghoniem",
 				"amr ghoniem",
 				"dr.amr ghoniem",
 				"who is doctor amr",
@@ -245,19 +297,7 @@
 			],
 			"context_set": ""
 		},
-		{
-			"tag": "channel",
-			"patterns": [
-				"doctor mohamed said channel",
-				"mohamed said channel",
-				"doctor mohamed elsaid channel",
-				"mohamed elsaid channel"
-			],
-			"responses": [
-				"You can watch dr.moahmed content:https://www.youtube.com/@DrMohammedElSaid"
-			],
-			"context_set": ""
-		},
+
 		{
 			"tag": ["location", "place", "affair"],
 			"patterns": [
@@ -298,5 +338,6 @@
 			],
 			"context_set": ""
 		}
+
 	]
 }
