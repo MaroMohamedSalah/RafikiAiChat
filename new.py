@@ -9,15 +9,7 @@ from nltk.stem import WordNetLemmatizer
 
 from fuzzy_matcher import fuzzy_match
 from input_handler import handle_input
-
-
-def load_intents_from_json(file_paths):
-    all_intents = []
-    for file_path in file_paths:
-        with open(file_path, 'r', encoding='utf-8') as file:
-            data = json.load(file)
-        all_intents.extend(data.get('intents', []))
-    return all_intents
+from intent_loader import load_intents_from_json
 
 
 def process_input(input_text):
