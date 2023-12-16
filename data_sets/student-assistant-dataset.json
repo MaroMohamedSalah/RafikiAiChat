@@ -16,22 +16,7 @@
 			],
 			"context_set": ""
 		},
-		{
-			"tag": ["material", "SA"],
-			"patterns": [
-				"i need some material for sa",
-				"give me material for sa",
-				"sa lectures",
-				"sa project",
-				"send more material fos sa",
-				"need material sa"
-			],
-			"responses": [
-				"here is some materials for sa made by marawan mohamed : https://www.youtube.com/watch?v=ggGmXba7yYU&list=PLjQhZRrolr67Nkq7ZYXfkUt87Q_6B5VxJ&pp=iAQB",
-				"here you can find D.MohamedEldesoky playlist for sa: https://www.youtube.com/watch?v=9jrN5BPx4MI&list=PL1DUmTEdeA6I-bsfaErW12ro4_6hC7fSp "
-			],
-			"context_set": ""
-		},
+
 		{
 			"tag": ["Timetable", "schedule"],
 			"patterns": [
@@ -50,7 +35,8 @@
 			"patterns": [
 				"give me some material for convex please",
 				"give material convex please",
-
+				"convex material",
+				"convex",
 				"send convex lectures"
 			],
 			"responses": [
@@ -61,12 +47,49 @@
 		{
 			"tag": ["material", "AI"],
 			"patterns": [
-				"give me some material for AI please",
-				"give material ai please",
-				"send AI lectures"
+				"i need some material for ai",
+				"give me material for ai",
+				"ai lectures",
+				"ai project",
+				"send more material fos ai",
+				"need material ai",
+				"ai material"
 			],
 			"responses": [
-				"Amr ghoneim playlist for AI : https://www.youtube.com/watch?v=sO6VGgBHppo&list=PLsnvpvHuTUbAZr0n65TgytBK6bHdT33A7"
+				"Amr ghoneim playlist for AI : https://www.youtube.com/watch?v=sO6VGgBHppo&list=PLsnvpvHuTUbAZr0n65TgytBK6bHdT33A7", "AI lectures by marwan: https://drive.google.com/drive/folders/1aiBeFhpmFmzdTQPzxKx6ZiRyPfo7-xY2?usp=sharing" , "DR. Amr drive: https://drive.google.com/drive/folders/1idzWQqb_Fb-BPLBPABPRMYLE-Pr7AS8j?fbclid=IwAR096X9bGtoixCqPy6ix9QN1sPa62mMCJF4QoL1PF4WJ0zaoP6Dj4ToiYJk"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": ["material", "SA"],
+			"patterns": [
+				"i need some material for sa",
+				"give me material for sa",
+				"sa lectures",
+				"sa project",
+				"send more material fos sa",
+				"need material sa",
+				"sa material",
+				"sa"
+			],
+			"responses": [
+				"here is some materials for sa made by marawan mohamed : https://www.youtube.com/watch?v=ggGmXba7yYU&list=PLjQhZRrolr67Nkq7ZYXfkUt87Q_6B5VxJ&pp=iAQB",
+				"here you can find D.MohamedEldesoky playlist for sa: https://www.youtube.com/watch?v=9jrN5BPx4MI&list=PL1DUmTEdeA6I-bsfaErW12ro4_6hC7fSp "
+			],
+			"context_set": ""
+		},
+		{
+			"tag": ["material", "ML"],
+			"patterns": [
+				"i need some material for ML",
+				"send ml lectures",
+				"need material ml",
+				"ml",
+				"ml material",
+				"machine learning"
+			],
+			"responses": [
+				"Hesham asem playlist for ML : https://www.youtube.com/watch?v=5_GKIhoXKyI&list=PL6-3IRz2XF5UJE2PbY7UU4SHi7UpV1mXo"
 			],
 			"context_set": ""
 		},
@@ -83,18 +106,7 @@
 			],
 			"context_set": ""
 		},
-		{
-			"tag": ["material", "ML"],
-			"patterns": [
-				"i need some material for ML",
-				"send ml lectures",
-				"need material ml"
-			],
-			"responses": [
-				"Hesham asem playlist for ML : https://www.youtube.com/watch?v=5_GKIhoXKyI&list=PL6-3IRz2XF5UJE2PbY7UU4SHi7UpV1mXo"
-			],
-			"context_set": ""
-		},
+
 		{
 			"tag": ["material", "db2"],
 			"patterns": [
@@ -193,7 +205,10 @@
 				"Give me marawan mohamed youtube",
 				"i need youtube link for marawan mohamed channel",
 				"give marawan mohamed youtube",
-				"need youtube link marawan mohamed channel"
+				"need youtube link marawan mohamed channel",
+				"marawan mohamed",
+				"marawan",
+				"marwan"
 			],
 			"responses": [
 				"here you will find marawan mohamed channnel: https://www.youtube.com/@Marwan-ol8ie/featured"

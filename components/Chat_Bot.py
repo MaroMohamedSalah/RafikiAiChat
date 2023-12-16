@@ -58,7 +58,7 @@ def rule_based_chatbot(user_input, intents):
 def chat_with_bot():
     key = True
     while key:
-        file_path = 'data_sets/college_info.json'
+        file_path = '../data_sets/college_info.json'
         intents = load_intents_from_json(file_path)
         user_input = input('user: ')
         if user_input.lower() in ['exit', 'bye']:
