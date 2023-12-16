@@ -152,6 +152,6 @@ def chatbot_with_q_learning(intents):
 
 
 # Main program
-json_file_path = 'data_sets/college_info.json'  # Update this with your JSON file path
+json_file_path = '../data_sets/college_info.json'  # Update this with your JSON file path
 intents = load_intents_from_json(json_file_path)
 chatbot_with_q_learning(intents)

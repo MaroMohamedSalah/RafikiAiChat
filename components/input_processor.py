@@ -1,6 +1,6 @@
 from nltk import RegexpTokenizer, pos_tag
 
-from Chat_Bot import detect_language
+from components.Chat_Bot import detect_language
 
 
 def process_input(input_text):

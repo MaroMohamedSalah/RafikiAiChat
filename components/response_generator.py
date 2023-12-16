@@ -1,6 +1,7 @@
 import random
-from fuzzy_matcher import fuzzy_match
-from input_processor import process_input, tokenize_user_input
+
+from components.fuzzy_matcher import fuzzy_match
+from components.input_processor import process_input, tokenize_user_input
 
 
 def generate_response(intent, user_input_str):
@@ -18,7 +19,8 @@ def generate_response(intent, user_input_str):
     processed_patterns = list(map(lambda pattern: process_input(pattern).lower(), intent['patterns']))
 
     # Exact match check with the same length
-    exact_matches = [pattern for pattern in processed_patterns if len(processed_input) == len(pattern) and processed_input == pattern]
+    exact_matches = [pattern for pattern in processed_patterns if
+                     len(processed_input) == len(pattern) and processed_input == pattern]
     if exact_matches:
         return random.choice(intent['responses'])
 
