@@ -31,13 +31,13 @@ def generate_response(intent, user_input_str):
     # Fuzzy match check with a higher threshold for input length >= 3
     fuzzy_threshold_high = 90
     fuzzy_high_matches = fuzzy_match(processed_input, intent['patterns'], fuzzy_threshold_high)
-    if fuzzy_high_matches:
+    if fuzzy_high_matches and all(len(processed_input) == len(pattern) for pattern in fuzzy_high_matches):
         return random.choice(intent['responses'])
 
     # Fuzzy match check with a lower threshold for input length >= 3
     fuzzy_threshold_low = 65
     fuzzy_low_matches = fuzzy_match(processed_input, intent['patterns'], fuzzy_threshold_low)
-    if fuzzy_low_matches:
+    if fuzzy_low_matches and all(len(processed_input) == len(pattern) for pattern in fuzzy_low_matches):
         return random.choice(intent['responses'])
 
     # If no direct or fuzzy match is found, check if any pattern is present in the processed input
