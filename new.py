@@ -8,14 +8,7 @@ from fuzzywuzzy import fuzz
 from nltk.stem import WordNetLemmatizer
 
 from fuzzy_matcher import fuzzy_match
-
-
-def handle_input(input_string):
-    result = ""
-    for char in input_string:
-        if len(result) == 0 or char != result[-1]:
-            result += char
-    return result
+from input_handler import handle_input
 
 
 def load_intents_from_json(file_paths):
