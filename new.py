@@ -1,36 +1,8 @@
-import json
 import random
-from textblob import TextBlob
-from nltk import pos_tag, word_tokenize, RegexpTokenizer
-from nltk.corpus import stopwords
-from Chat_Bot import detect_language
-from fuzzywuzzy import fuzz
-from nltk.stem import WordNetLemmatizer
 
 from fuzzy_matcher import fuzzy_match
-from input_handler import handle_input
+from input_processor import process_input, tokenize_user_input
 from intent_loader import load_intents_from_json
-
-
-def process_input(input_text):
-    processed_input = handle_input(input_text.lower())
-    return processed_input
-
-
-def tokenize_user_input(user_input_str):
-    lang = 'english'
-    if detect_language(user_input_str) == 'ar':
-        lang = "arabic"
-
-    tokenizer = RegexpTokenizer(r'\w+')
-    tokens = tokenizer.tokenize(user_input_str.lower())
-
-    pos_tags = pos_tag(tokens)
-
-    # stop_words = set(stopwords.words(lang))
-    #  tokens = [token for token in tokens if token not in stop_words]
-
-    return tokens
 
 
 def get_response(intent, user_input_str):
@@ -38,7 +10,8 @@ def get_response(intent, user_input_str):
     processed_patterns = list(map(lambda pattern: process_input(pattern).lower(), intent['patterns']))
 
     # Exact match check with the same length
-    exact_matches = [pattern for pattern in processed_patterns if len(processed_input) == len(pattern) and processed_input == pattern]
+    exact_matches = [pattern for pattern in processed_patterns if
+                     len(processed_input) == len(pattern) and processed_input == pattern]
     if exact_matches:
         return random.choice(intent['responses'])
 
@@ -63,7 +36,6 @@ def get_response(intent, user_input_str):
         return intent.get("response", "I don't understand.")
 
     return None
-
 
 
 def chatbot(intents):
