@@ -336,7 +336,7 @@
 				"want discrete maths playlist"
 			],
 			"responses": [
-				"here is the playlist for disccrete maths: https://youtube.com/playlist?list=PLp4VgraT9FJB0n-RLmMcqLoO4nVYwQZEU"
+				"here is the playlist for discrete maths: https://youtube.com/playlist?list=PLp4VgraT9FJB0n-RLmMcqLoO4nVYwQZEU"
 			],
 			"context_set": ""
 		},
@@ -346,7 +346,8 @@
 				"Give me register courses link",
 				"i want to register courses",
 				"give register courses link",
-				"want register courses"
+				"want register courses",
+				"register courses"
 			],
 			"responses": [
 				"here is the link: http://education.fcih.helwan.edu.eg/portal/student/register-courses"
