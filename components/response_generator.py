@@ -111,8 +111,8 @@ def generate_response(intents, user_input_str):
     best_fuzzy_matches, best_fuzzy_responses = all_fuzzy_matches[0] if all_fuzzy_matches else ([], [])
 
     # Print all exact and fuzzy matches for debugging purposes
-    print("Exact Matches:", all_exact_matches)
-    print("Fuzzy Matches:", all_fuzzy_matches)
+ #   print("Exact Matches:", all_exact_matches)
+  #  print("Fuzzy Matches:", all_fuzzy_matches)
 
     # Return the first response based on priority (exact match first, then fuzzy match)
     if best_exact_matches and best_exact_responses:
