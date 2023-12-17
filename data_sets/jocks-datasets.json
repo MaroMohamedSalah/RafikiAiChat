@@ -186,6 +186,21 @@
 			],
 			"context_set": ""
 		},
+			{
+			"tag": "alo",
+			"patterns": [
+				"alo",
+				"الو",
+				"تررن",
+				"تست",
+				"هل تسمعني"
+			],
+			"responses": [
+				"الوووووووووووو"
+			],
+			"context_set": ""
+		},
+
 
 		{
 			"tag": "Encouraging sentences",
