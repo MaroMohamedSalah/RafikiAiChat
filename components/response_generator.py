@@ -76,7 +76,7 @@ def generate_response(intents, user_input_str):
     for intent in intents:
         processed_patterns = list(map(lambda pattern: process_input(pattern).lower(), intent['patterns']))
 
-        fuzzy_threshold = 90
+        fuzzy_threshold = 80
         fuzzy_matches = fuzzy_match(processed_input, processed_patterns, fuzzy_threshold)
 
         if fuzzy_matches:
@@ -86,8 +86,9 @@ def generate_response(intents, user_input_str):
     all_fuzzy_matches = [(matches, responses) for matches, responses in all_fuzzy_matches if matches]
     all_fuzzy_matches = sorted(all_fuzzy_matches, key=lambda x: x[0][0][1], reverse=True)  # Sort by highest confidence
 
+    print(all_fuzzy_matches)  # Print all matches with their scores
+
     best_fuzzy_matches, best_responses = all_fuzzy_matches[0] if all_fuzzy_matches else ([], [])
-    print(all_fuzzy_matches)
 
     if best_fuzzy_matches and best_responses:
         return best_responses[0]  # Returning the first response for the best fuzzy matches

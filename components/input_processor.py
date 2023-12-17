@@ -1,4 +1,5 @@
 from nltk import RegexpTokenizer, pos_tag
+from nltk.corpus import stopwords
 
 from components.Chat_Bot import detect_language
 
@@ -37,6 +38,6 @@ def tokenize_user_input(user_input_str):
     pos_tags = pos_tag(tokens)
 
     # stop_words = set(stopwords.words(lang))
-    #  tokens = [token for token in tokens if token not in stop_words]
+    # tokens = [token for token in tokens if token not in stop_words]
 
     return tokens
