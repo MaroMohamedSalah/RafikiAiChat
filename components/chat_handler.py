@@ -1,7 +1,6 @@
 from components.input_processor import tokenize_user_input
 from components.response_generator import generate_response
 
-
 def chat(intents):
     print("Chatbot: Hi there! Type 'exit' to end the conversation.")
 
@@ -14,13 +13,7 @@ def chat(intents):
             print("Chatbot: Goodbye!")
             break
 
-        response = None
-        for intent in intents:
-            response = generate_response(intent, user_input_str)
-
-            if response:
-                break
-
+        response = generate_response(intents, user_input_str)  # Pass the 'intents' list
         if response:
             print("rafikak:", response)
         else:
