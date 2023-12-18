@@ -1,5 +1,6 @@
 from components.input_processor import tokenize_user_input
 from components.response_generator import generate_response
+from components.user_name import extract_user_name
 
 
 def chat(intents):
@@ -15,6 +16,10 @@ def chat(intents):
             break
 
         response = generate_response(intents, user_input_str)  # Pass the 'intents' list
+        user_name = extract_user_name(user_input_str)
+        if user_name:
+            print(f"rafikak: Hi {user_name}! How can I assist you today?")
+            continue
         if response:
             print("rafikak:", response)
         else:
