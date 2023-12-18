@@ -33,11 +33,11 @@
 		{
 			"tag": ["material", "Convex"],
 			"patterns": [
-				"give me some material for convex please",
-				"give material convex please",
+				"material for convex ",
+				"give material convex ",
 				"convex material",
 				"convex",
-				"send convex lectures"
+				" convex lectures"
 			],
 			"responses": [
 				"you can find some material for convex here : https://www.youtube.com/watch?v=McLq1hEq3UY&list=PL3940DD956CDF0622"
@@ -124,9 +124,8 @@
 		{
 			"tag": ["material", "os2"],
 			"patterns": [
-				"i need os2 materials",
-				"send operation system2 lectures",
-				"need materials",
+				" os2 materials",
+				" operation system2 lectures",
 				"send operation lectures"
 			],
 			"responses": [
@@ -137,8 +136,8 @@
 		{
 			"tag": ["material", "Multimedia"],
 			"patterns": [
-				"send multimedia material",
-				"send multimedia lectures",
+				" multimedia material",
+				" multimedia lectures",
 				"multimedia lectures",
 				"multimedia material"
 			],
@@ -150,12 +149,10 @@
 		{
 			"tag": ["Drive", "TermMaterials"],
 			"patterns": [
-				"send level3 material",
-				"send level3 lectures",
-				"i want the first term drive for level3",
-				"i want the second term drive for level3",
-				"send material",
-				"send lectures",
+				" level3 material",
+				" level3 lectures",
+				"first term drive for level3",
+				" second term drive for level3",
 				"want first term drive",
 				"want second term drive"
 			],
@@ -291,10 +288,9 @@
 		{
 			"tag": "SecondYear",
 			"patterns": [
-				"send my second term material for level2 ",
-				"i need some material for level2",
-				"send second term material",
-				"need material"
+				" second term material for level2 ",
+				" material for level2",
+				"send second term material"
 			],
 			"responses": [
 				"here you will find some material for level2 secondterm: https://drive.google.com/drive/u/0/folders/1WWyG9zerNf_OZtkJVqDpqcHvUZVg8is_  , and some exams:https://drive.google.com/drive/folders/16hz1sYlF-wYLSN8CMSFR44-uYTaHvhjb"
