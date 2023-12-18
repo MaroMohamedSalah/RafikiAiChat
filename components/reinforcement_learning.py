@@ -4,7 +4,7 @@ import numpy as np
 
 
 def choose_action(state, Q, exploration_prob):
-    """
+    """rmdir /s /q venv
     Function to choose the action based on epsilon-greedy policy.
 
     Parameters:

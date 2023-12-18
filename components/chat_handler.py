@@ -1,8 +1,32 @@
 from components.input_processor import tokenize_user_input
+from components.reinforcement_learning import choose_action, evaluate_response, update_q_value, print_q_table
 from components.response_generator import generate_response
-from reinforcement_learning import choose_action,update_q_value,evaluate_response
 
-def chatbot_with_q_learning(intents):
+
+# def chat(intents):
+#     print("Chatbot: Hi there! Type 'exit' to end the conversation.")
+#
+#     while True:
+#         user_input_str = input("You: ")
+#         user_tokens = tokenize_user_input(user_input_str)
+#         user_input_str = ' '.join(user_tokens)
+#
+#         if user_input_str.lower() == 'exit':
+#             print("Chatbot: Goodbye!")
+#             break
+#
+#         response = None
+#         for intent in intents:
+#             response = generate_response(intent, user_input_str)
+#
+#             if response:
+#                 break
+#
+#         if response:
+#             print("rafikak:", response)
+#         else:
+#             print("Chatbot: I'm sorry, I didn't understand that. Can you please rephrase?")
+def chat(intents):
     states = set(' '.join(intent['patterns']) for intent in intents if 'patterns' in intent)
     Q = {state: [0] * len(intents) for state in states}
     feedback_dict = {}
@@ -43,7 +67,7 @@ def chatbot_with_q_learning(intents):
                 print(feedback_dict)
                 update_q_value(user_state, action, reward, Q, learning_rate, discount_factor)
                 print(f"Selected Action: {action}, Q-Value: {Q[user_state][action]}")
-                print("Feedback Dict:", feedback_dict)
+                # print("Feedback Dict:", feedback_dict)
                 # print_q_table(Q)
 
                 # Learn from user feedback
