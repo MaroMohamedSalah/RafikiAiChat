@@ -1,5 +1,3 @@
-import random
-
 from fuzzywuzzy import fuzz
 
 from components.fuzzy_matcher import fuzzy_match
@@ -73,7 +71,6 @@ def calculate_confidence(processed_input, matched_patterns):
     return confidences if confidences else []
 
 
-
 def generate_response(intents, user_input_str):
     processed_input = process_input(user_input_str).lower()
     all_exact_matches = []
@@ -85,7 +82,8 @@ def generate_response(intents, user_input_str):
         processed_patterns = [process_input(pattern).lower() for pattern in intent['patterns']]
 
         # Search for exact matches with the same length
-        exact_matches = [pattern for pattern in processed_patterns if len(pattern) == len(processed_input) and pattern == processed_input]
+        exact_matches = [pattern for pattern in processed_patterns if
+                         len(pattern) == len(processed_input) and pattern == processed_input]
 
         if exact_matches:
             all_exact_matches.append((exact_matches, intent['responses']))
@@ -111,8 +109,8 @@ def generate_response(intents, user_input_str):
     best_fuzzy_matches, best_fuzzy_responses = all_fuzzy_matches[0] if all_fuzzy_matches else ([], [])
 
     # Print all exact and fuzzy matches for debugging purposes
- #   print("Exact Matches:", all_exact_matches)
-  #  print("Fuzzy Matches:", all_fuzzy_matches)
+    #   print("Exact Matches:", all_exact_matches)
+    #  print("Fuzzy Matches:", all_fuzzy_matches)
 
     # Return the first response based on priority (exact match first, then fuzzy match)
     if best_exact_matches and best_exact_responses:
