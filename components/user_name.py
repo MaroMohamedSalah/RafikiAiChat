@@ -1,3 +1,6 @@
+import re
+
+
 def extract_user_name(user_input_str):
     name_patterns = [
         re.compile(r"(my name is|I am|name is|I|name) (.+)", re.IGNORECASE),
