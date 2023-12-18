@@ -1,6 +1,7 @@
 from components.input_processor import tokenize_user_input
 from components.response_generator import generate_response
 
+
 def chat(intents):
     print("Chatbot: Hi there! Type 'exit' to end the conversation.")
 
