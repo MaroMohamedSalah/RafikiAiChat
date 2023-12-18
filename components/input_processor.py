@@ -1,3 +1,5 @@
+from nltk.corpus import stopwords
+
 from nltk import RegexpTokenizer, pos_tag
 
 from components.Chat_Bot import detect_language
@@ -31,12 +33,20 @@ def tokenize_user_input(user_input_str):
     if detect_language(user_input_str) == 'ar':
         lang = "arabic"
 
+    def keep_specific_stopwords(tokens, specific_stopwords):
+        stop_words = set(stopwords.words(lang))
+        filtered_tokens = [token for token in tokens if
+                           token.lower() in specific_stopwords or token.lower() not in stop_words]
+        return filtered_tokens
+
+    # Assuming 'lang' is defined
     tokenizer = RegexpTokenizer(r'\w+')
     tokens = tokenizer.tokenize(user_input_str.lower())
 
-    pos_tags = pos_tag(tokens)
+    # Define specific stop words to keep
+    specific_stopwords_to_keep = {'is', 'it'}
 
-    # stop_words = set(stopwords.words(lang))
-    #  tokens = [token for token in tokens if token not in stop_words]
+    # Remove all stop words except 'is' and 'it'
+    tokens = keep_specific_stopwords(tokens, specific_stopwords_to_keep)
 
     return tokens
