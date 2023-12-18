@@ -1,3 +1,5 @@
+import random
+
 from fuzzywuzzy import fuzz
 
 from components.fuzzy_matcher import fuzzy_match
@@ -62,9 +64,9 @@ def generate_response(intents, user_input_str):
 
     # Return the first response based on priority (exact match first, then fuzzy match)
     if best_exact_matches and best_exact_responses:
-        return best_exact_responses[0]
+        return random.choice(tuple(best_exact_responses))
     elif best_fuzzy_matches and best_fuzzy_responses:
-        return best_fuzzy_responses[0]
+        return random.choice(tuple(best_fuzzy_responses))
     else:
         return "Sorry, I couldn't find a suitable response."
 
