@@ -45,9 +45,9 @@ def chat(intents):
                 if user_state not in feedback_dict:
                     feedback_dict[user_state] = 0
                 feedback_dict[user_state] += reward
-                print(feedback_dict)
+                # print(feedback_dict)
                 update_q_value(user_state, action, reward, Q, learning_rate, discount_factor)
-                print(f"Selected Action: {action}, Q-Value: {Q[user_state][action]}")
+                # print(f"Selected Action: {action}, Q-Value: {Q[user_state][action]}")
                 # print("Feedback Dict:", feedback_dict)
                 # print_q_table(Q)
 
@@ -60,7 +60,7 @@ def chat(intents):
         # Print the word with the highest number in feedback_dict
     if feedback_dict:
         max_word = max(feedback_dict, key=feedback_dict.get)
-        print(f"Chatbot: The Response with the highest feedback is: '{max_word}'")
+        # print(f"Chatbot: The Response with the highest feedback is: '{max_word}'")
 
     else:
         print("Chatbot: I'm sorry, I didn't understand that. Can you please rephrase?")
