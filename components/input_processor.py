@@ -1,4 +1,5 @@
-import stopwords
+from nltk.corpus import stopwords
+
 from nltk import RegexpTokenizer, pos_tag
 
 from components.Chat_Bot import detect_language
