@@ -45,11 +45,7 @@ def chat(intents):
             print("Chatbot: Goodbye!")
             break
 
-        response = None
-        for intent in intents:
-            response = generate_response(intent, user_input_str)
-            if response:
-                break
+        response = generate_response(intents, user_input_str)
 
         if response:
             print("Chatbot:", response)
