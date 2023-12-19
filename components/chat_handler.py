@@ -1,8 +1,6 @@
 from components.input_processor import tokenize_user_input
 from components.reinforcement_learning import choose_action, evaluate_response, update_q_value, print_q_table
 from components.response_generator import generate_response
-from components.user_name import extract_user_name
-
 
 def chat(intents):
     states = set(' '.join(intent['patterns']) for intent in intents if 'patterns' in intent)
@@ -24,10 +22,6 @@ def chat(intents):
             break
 
         response = generate_response(intents, user_input_str)  # Pass the 'intents' list
-        user_name = extract_user_name(user_input_str)
-        if user_name:
-            print(f"rafikak: Hi {user_name}! How can I assist you today?")
-            continue
         if response:
             print("Chatbot:", response)
             user_state = response
