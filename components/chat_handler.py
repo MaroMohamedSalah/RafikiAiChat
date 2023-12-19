@@ -5,12 +5,12 @@ from components.user_name import extract_user_name
 
 
 def chat(intents):
-    states = set(' '.join(intent['patterns']) for intent in intents if 'patterns' in intent)
+    states = set(' '.join(intent['responses']) for intent in intents if 'responses' in intent)
     Q = {state: [0] * len(intents) for state in states}
     feedback_dict = {}
     learning_rate = 0.3
     discount_factor = 0.7
-    exploration_prob = 1
+    exploration_prob = 0.2
 
     print("Chatbot: Hi there! Type 'exit' to end the conversation.")
 
@@ -47,7 +47,7 @@ def chat(intents):
                 feedback_dict[user_state] += reward
                 # print(feedback_dict)
                 update_q_value(user_state, action, reward, Q, learning_rate, discount_factor)
-                # print(f"Selected Action: {action}, Q-Value: {Q[user_state][action]}")
+                print(f"response -> Q-Value: {Q[user_state][action]}")
                 # print("Feedback Dict:", feedback_dict)
                 # print_q_table(Q)
 
