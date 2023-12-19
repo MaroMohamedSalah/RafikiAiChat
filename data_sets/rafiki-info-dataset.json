@@ -1,160 +1,234 @@
 {
-	"intents": [
-		{
-			"tag": "info",
-			"patterns": [
-				"tell me about rafiki",
-				"tell rafiki",
-				"who is rafiki",
-				"rafiki website"
-			],
-			"responses": [
-				"Rafiki is an online platform designed to assist students during their academic journey. It provides resources, communication tools, and guidance for college life and career opportunities.",
-				"Rafiki is a comprehensive website aimed at supporting students throughout their educational experience, offering resources, communication features, and career guidance.",
-				"Rafiki is a student-centric website offering various tools, resources, and communication channels to enhance the academic experience and facilitate career development."
-			],
-			"context_set": ""
-		},
-		{
-			"tag": "team",
-			"patterns": [
-				"who is behind rafiki",
-				"behind rafiki",
-				"tell me about team rafiki",
-				"tell team rafiki",
-				"team members of rafiki",
-				"team members rafiki",
-				"rafiki's team",
-				"rafiki team"
-			],
-			"responses": [
-				"The team behind Rafiki consists of dedicated individuals passionate about supporting students. They work on providing resources, communication channels, and career support to aid students in their academic journey.",
-				"The team at Rafiki is committed to helping students. They manage resources, communication tools, and career guidance to support students throughout their educational experience.",
-				"Rafiki's team comprises professionals focused on assisting students. They provide resources, communication channels, and career guidance to enhance the academic experience."
-			],
-			"context_set": ""
-		},
-		{
-			"tag": "rafiki_scoop",
-			"patterns": [
-				"who can access rafiki",
-				"access rafiki",
-				"who can use rafiki",
-				"use rafiki",
-				"rafiki users",
-				"rafiki membership"
-			],
-			"responses": [
-				"Rafiki is accessible to all current students, graduates, doctors, sponsors, and others associated with the college.",
-				"All college members have access to Rafiki.",
-				"Rafiki is available for students interested in academic insights and graduates seeking job opportunities."
-			],
-			"context_set": ""
-		},
-		{
-			"tag": "rafiki_login",
-			"patterns": [
-				"how to login rafiki",
-				"login rafiki",
-				"access rafiki",
-				"login process for rafiki",
-				"login process rafiki",
-				"How to create an account on rafiki",
-				"create account rafiki",
-				"steps to access rafiki",
-				"steps access rafiki"
-			],
-			"responses": [
-				"To log in to Rafiki, visit the website and click on the 'Log In' button.",
-				"Access Rafiki by logging in through the website.",
-				"To join Rafiki, visit the website and fill in your details after clicking 'Log In'."
-			],
-			"context_set": ""
-		},
-		{
-			"tag": "rafiki_social",
-			"patterns": [
-				"social media of rafiki",
-				"social media rafiki",
-				"rafiki's social pages",
-				"rafiki social pages",
-				"rafiki on social networks",
-				"rafiki social networks"
-			],
-			"responses": [
-				"Rafiki's Facebook page: https://www.facebook.com/rafikiFCAIHu",
-				"Rafiki's Instagram page: https://www.instagram.com/rafiki_fcai/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==",
-				"Contact Rafiki via email: rafiki.questions@gmail.com"
-			],
-			"context_set": ""
-		},
-		{
-			"tag": "rafiki_communicate",
-			"patterns": [
-				"how to communicate with rafiki",
-				"communicate rafiki",
-				"contact team rafiki",
-				"talk to team rafiki",
-				"talk team rafiki"
-			],
-			"responses": [
-				"You can contact Rafiki via email at rafiki.questions@gmail.com."
-			],
-			"context_set": ""
-		},
-		{
-			"tag": "rafiki_chat",
-			"patterns": [
-				"what is rafiki chat",
-				"rafiki chat",
-				"info about rafiki chat",
-				"info rafiki chat",
-				"rafiki chat",
-				"purpose of rafiki chat",
-				"purpose rafiki chat"
-			],
-			"responses": [
-				"Rafiki chat helps students manage their college life effectively by providing information about their academic year, paperwork, schedules, and locations within the college.",
-				"Rafiki chat is a flexible and friendly tool designed to support students in various aspects of their educational journey.",
-				"Rafiki chat provides information about university schedules and course details."
-			],
-			"context_set": ""
-		},
-		{
-			"tag": "rafiki_feedback",
-			"patterns": [
-				"how to give feedback to rafiki",
-				"give feedback rafiki",
-				"share my thoughts on rafiki",
-				"share thoughts rafiki",
-				"rafiki feedback",
-				"provide suggestions for rafiki",
-				"provide suggestions rafiki"
-			],
-			"responses": [
-				"We appreciate your feedback! Please email us at feedback@rafiki.com to share your thoughts and suggestions.",
-				"Your feedback is valuable to us. You can provide your suggestions to improve Rafiki by emailing us at feedback@rafiki.com."
-			],
-			"context_set": ""
-		},
-		{
-			"tag": "rafiki_support",
-			"patterns": [
-				"need help with rafiki",
-				"need help rafiki",
-				"require assistance on rafiki",
-				"require assistance rafiki",
-				"help with rafiki",
-				"help rafiki",
-				"technical support for rafiki",
-				"technical support rafiki",
-				"help"
-			],
-			"responses": [
-				"For any assistance or technical support regarding Rafiki, please reach out to our support team at support@rafiki.com.",
-				"Facing issues with Rafiki? Contact our support team at support@rafiki.com for assistance."
-			],
-			"context_set": ""
-		}
-	]
+  "intents": [
+    {
+      "tag": "info",
+      "patterns": [
+        "about rafiki",
+        "about rafiki infomations",
+        "rafiki infomations",
+        "rafiki",
+        "who is rafiki",
+        "rafiki website",
+        "what does Rafiki offer students?",
+        "can Rafiki help with academic resources?",
+        "how does Rafiki support career development?",
+        "what are the features of Rafiki's communication tools?",
+        "does Rafiki provide guidance on college life?"
+      ],
+      "responses": [
+        "Rafiki is an online platform specifically designed for FCAI-HU, facilitating communication and collaboration among students, doctors, teaching assistants, managers, graduates, and HR professionals in one centralized place.",
+        "It serves as a comprehensive hub for academic resources, fostering seamless communication and offering guidance for career development within FCAI-HU.",
+        "Rafiki is instrumental in connecting the FCAI-HU community by providing tools, resources, and communication channels to enhance academic experiences and facilitate career growth.",
+        "Rafiki serves as the central platform at FCAI-HU, enabling students, doctors, teaching assistants, managers, graduates, and HR professionals to interact and collaborate efficiently.",
+        "At FCAI-HU, Rafiki streamlines communication and collaboration, ensuring a unified platform for students, doctors, teaching assistants, managers, graduates, and HR professionals."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "team",
+      "patterns": [
+        "who is behind rafiki",
+        "behind rafiki",
+        "tell me about team rafiki",
+        "tell team rafiki",
+        "team members of rafiki",
+        "team members rafiki",
+        "rafiki's team",
+        "rafiki team"
+      ],
+      "responses": [
+        "Rafiki's team, led by Marwan Mohamed with Dr. Amr as our consultant, consists of dedicated college students focused on supporting their peers. Together, they provide tailored resources, advanced communication tools, and career guidance for students at FCAI-HU."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "rafiki_scoop",
+      "patterns": [
+        "who can access rafiki",
+        "access rafiki",
+        "who can use rafiki",
+        "use rafiki",
+        "rafiki users",
+        "rafiki membership"
+      ],
+      "responses": [
+        "Rafiki is accessible to all current students, graduates, doctors, TAs, managers, HR, and others associated with the college."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "rafiki_login",
+      "patterns": [
+        "how to login rafiki",
+        "login rafiki",
+        "access rafiki",
+        "login process for rafiki",
+        "login process rafiki",
+        "How to create an account on rafiki",
+        "create account rafiki",
+        "steps to access rafiki",
+        "steps access rafiki"
+      ],
+      "responses": [
+        "To log in to Rafiki, go to the official website, click on the 'Log In' button, enter your credentials (username and password) associated with your FCAI-HU account, and you'll gain access to Rafiki's platform.",
+        "To access Rafiki, log in using your FCAI-HU credentials on the website's 'Log In' page, ensuring you have an active account within the FCAI-HU system.",
+        "To create an account on Rafiki, visit the official website, click on the 'Sign Up' or 'Create Account' option, fill in the required details including your FCAI-HU credentials, and follow the prompts to create your account and access Rafiki."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "rafiki_social",
+      "patterns": [
+        "social media of rafiki",
+        "social media rafiki",
+        "rafiki's social pages",
+        "rafiki social pages",
+        "rafiki on social networks",
+        "rafiki social networks"
+      ],
+      "responses": [
+        "Rafiki's Facebook page: https://www.facebook.com/rafikiFCAIHu",
+        "Rafiki's Instagram page: https://www.instagram.com/rafiki_fcai/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==",
+        "Contact Rafiki via email: rafiki.questions@gmail.com"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "rafiki_communicate",
+      "patterns": [
+        "how to communicate with rafiki",
+        "communicate rafiki",
+        "contact team rafiki",
+        "talk to team rafiki",
+        "talk team rafiki"
+      ],
+      "responses": [
+        "You can contact Rafiki via email at rafiki.questions@gmail.com."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "rafiki_chat",
+      "patterns": [
+        "what is rafiki chat",
+        "rafiki chat",
+        "info about rafiki chat",
+        "info rafiki chat",
+        "rafiki chat",
+        "purpose of rafiki chat",
+        "purpose rafiki chat"
+      ],
+      "responses": [
+        "Rafiki chat helps students manage their college life effectively by providing information about their academic year, paperwork, schedules, and locations within the college.",
+        "Rafiki chat is a flexible and friendly tool designed to support students in various aspects of their educational journey.",
+        "Rafiki chat provides information about university schedules and course details.",
+        "Your Rafik on you Collage"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "rafiki_feedback",
+      "patterns": [
+        "how to give feedback to rafiki",
+        "give feedback rafiki",
+        "share my thoughts on rafiki",
+        "share thoughts rafiki",
+        "rafiki feedback",
+        "provide suggestions for rafiki",
+        "provide suggestions rafiki"
+      ],
+      "responses": [
+        "We appreciate your feedback! Please email us at feedback@rafiki.com to share your thoughts and suggestions.",
+        "Your feedback is valuable to us. You can provide your suggestions to improve Rafiki by emailing us at feedback@rafiki.com."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "rafiki_support",
+      "patterns": [
+        "need help with rafiki",
+        "need help rafiki",
+        "require assistance on rafiki",
+        "require assistance rafiki",
+        "help with rafiki",
+        "help rafiki",
+        "technical support for rafiki",
+        "technical support rafiki",
+        "help"
+      ],
+      "responses": [
+        "For any assistance or technical support regarding Rafiki, please reach out to our support team at support@rafiki.com.",
+        "Facing issues with Rafiki? Contact our support team at support@rafiki.com for assistance."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "rafiki_chat_creators",
+      "patterns": [
+        "rafiki chat developers",
+        "rafiki chat team",
+        "who created Rafiki Chat",
+        "creators of Rafiki Chat",
+        "who developed Rafiki Chat",
+        "team behind Rafiki Chat",
+        "Rafiki Chat developers",
+        "Rafiki Chat creators",
+        "who develop you",
+        "who create you",
+        "developers of you"
+      ],
+      "responses": [
+        "Rafiki Chat was created by a dedicated team led by Marwan Mohamed and included Mazen Ahmed, Maria, Mazen Mohamed, Shahd Ahmed, Azza Mohamed, and Mahmoud Fathy. Together, they developed and designed Rafiki Chat to enhance communication and support within the FCAI-HU community."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "rafiki_features",
+      "patterns": [
+        "your current features",
+        "what are the current features on Rafiki?",
+        "features of Rafiki",
+        "version features",
+        "what functionalities does Rafiki offer?",
+        "Rafiki's current features"
+      ],
+      "responses": [
+        "In current demo Rafiki features is: Rafiki Jobs, Reset Password, Login, Signup"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "rafiki_current_version",
+      "patterns": [
+        "current version number",
+        "rafiki current version",
+        "your current version",
+        "what is the current version of Rafiki?",
+        "current version number of Rafiki",
+        "what version is Rafiki currently on?",
+        "current Rafiki version"
+      ],
+      "responses": [
+        "The current version of Rafiki is version 0.1, Rafiki features is: Rafiki Jobs, Reset Password, Login, Signup"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "rafiki_upcoming_features",
+      "patterns": [
+        "upcoming features",
+        "next version",
+        "coming soon",
+        "what is next",
+        "what are the upcoming features in the next Rafiki version?",
+        "features coming in next Rafiki version",
+        "upcoming additions on Rafiki",
+        "next version's new features in Rafiki"
+      ],
+      "responses": [
+        "In the upcoming version of Rafiki, users can expect new features such as Materials, feedback, FAQ, Enhance on Rafiki Chat. Stay tuned for more updates on the release and the specifics of these additions!"
+      ],
+      "context_set": ""
+    }
+  ]
 }
